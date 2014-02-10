@@ -1,0 +1,1 @@
+include ':PodClient', ':sugar', ':iconicdroid', ':drag-sort-listview', ':sliding-up-panel', 'pager'

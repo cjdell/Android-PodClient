@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/feed_item"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:id="@+id/linearLayout">
+
+            <RelativeLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/multi_thumbs"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left|top"
+                        android:layout_margin="0dp">
+
+                        <ImageView
+                            android:id="@+id/thumbnail_small_1"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="left"
+                            android:background="#fff"
+                            android:layout_margin="0dp" />
+
+                        <ImageView
+                            android:id="@+id/thumbnail_small_2"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="right"
+                            android:background="#fff"
+                            android:layout_margin="0dp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:orientation="horizontal"
+                        android:layout_gravity="bottom|left"
+                        android:layout_margin="0dp">
+
+                        <ImageView
+                            android:id="@+id/thumbnail_small_3"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="left"
+                            android:background="#fff"
+                            android:layout_margin="0dp" />
+
+                        <ImageView
+                            android:id="@+id/thumbnail_small_4"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_weight="0.5"
+                            android:layout_gravity="right"
+                            android:background="#fff"
+                            android:layout_margin="0dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_gravity="center"
+                android:layout_marginBottom="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Title goes here..."
+                android:textColor="#040404"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:typeface="sans"
+                android:lines="1"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <ImageView
+        android:id="@+id/menu_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_moreoverflow_holo_light"
+            android:layout_marginBottom="3dp"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_marginRight="2dp" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>

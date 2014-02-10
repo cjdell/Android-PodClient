@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_feeds_settings"
+        android:title="Feed Settings"
+        android:orderInCategory="101" />
+
+    <item
+        android:id="@+id/action_update_feed"
+        android:title="Update Feed"
+        android:orderInCategory="101" />
+
+    <item
+        android:id="@+id/action_delete_feed"
+        android:title="Delete Feed"
+        android:orderInCategory="102" />
+
+</menu>

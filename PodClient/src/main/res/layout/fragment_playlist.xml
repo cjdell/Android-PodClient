@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.mobeta.android.dslv.DragSortListView
+        android:background="@android:color/transparent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/lstCasts"
+        android:layout_alignParentLeft="true"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        app:drag_enabled="true"
+        app:drag_start_mode="onLongPress"
+        app:sort_enabled="true"
+        app:max_drag_scroll_speed="2.0"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignBottom="@+id/frameLayout"
+        android:clipToPadding="false"
+        android:paddingBottom="40dp"
+        android:fastScrollEnabled="true" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout"
+        android:background="#aa000000"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            android:layout_alignParentBottom="false"
+            android:mirrorForRtl="true"
+            android:minHeight="32dp"
+            android:maxHeight="32dp"
+            android:layout_alignParentTop="true"
+            android:clickable="false" />
+
+        </FrameLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:gravity="center"
+        android:padding="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:focusable="false"
+        android:id="@+id/linearLayout2"
+        android:background="@drawable/dark_gradient_bg">
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="fill_parent"
+            android:text="0:00"
+            android:id="@+id/txtPos"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|left" />
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back"
+            android:id="@+id/btnPrevCont"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_media_previous" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back"
+            android:id="@+id/btnBackwardCont"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:id="@+id/btnBackward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_media_rew" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back"
+            android:id="@+id/btnPlayCont"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_media_play" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back"
+            android:id="@+id/btnForwardCont"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp">
+
+            <Button
+                android:id="@+id/btnForward"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_media_ff" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back"
+            android:id="@+id/btnNextCont"
+            android:layout_toEndOf="@+id/btnPlayCont"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/btnPlayCont"
+            android:layout_marginLeft="2dp">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_media_next" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="fill_parent"
+            android:text="0:00"
+            android:id="@+id/txtLen"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|right" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.cjdell.podclient.FeedSearchFragment"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <EditText
+            android:id="@+id/txtSearchTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:hint="Enter keywords or paste URL..."
+            android:layout_weight="1"
+            android:inputType="text"
+            android:imeOptions="actionSearch"
+            android:focusable="true"
+            android:background="@drawable/edit_text_left"
+            android:layout_toLeftOf="@+id/btnSearch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+            <requestFocus />
+        </EditText>
+
+        <FrameLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/button_back_right"
+            android:id="@+id/btnSearch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/txtSearchTerm">
+
+            <Button
+                android:id="@+id/btnGo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:drawable/ic_menu_search" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lstSearchResults"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>
+

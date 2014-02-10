@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_mark_item_played"
+        android:title="Mark Item Played"
+        android:orderInCategory="101" />
+
+    <item
+        android:id="@+id/action_mark_item_unplayed"
+        android:title="Mark Item Unplayed"
+        android:orderInCategory="101" />
+
+    <item
+        android:id="@+id/action_download_item"
+        android:title="Download Item"
+        android:orderInCategory="102" />
+
+    <item
+        android:id="@+id/action_remove_item"
+        android:title="Remove Item"
+        android:orderInCategory="103" />
+
+    <item
+        android:id="@+id/action_delete_item"
+        android:title="Delete Item"
+        android:orderInCategory="104" />
+
+</menu>

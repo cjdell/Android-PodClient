@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradient_bg">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:id="@+id/linearLayout"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/list_image"
+                android:layout_width="48dip"
+                android:layout_height="48dip"
+                android:layout_marginTop="4dp"
+                android:background="#dddddd"
+                android:scaleType="fitCenter" />
+
+            <ImageView
+                android:id="@+id/menu_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:src="@drawable/ic_menu_moreoverflow_holo_light"
+                android:layout_alignParentBottom="false"
+                android:layout_alignLeft="@+id/linearLayout"
+                android:layout_alignStart="@+id/linearLayout"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/thumbnail"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Title goes here..."
+                android:textColor="#040404"
+                android:typeface="sans"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:editable="false" />
+
+            <TextView
+                android:id="@+id/pub_date"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:textColor="#000"
+                android:textSize="@dimen/desc_text_size"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Pub date goes here..." />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pub_date"
+                android:textColor="#343434"
+                android:textSize="@dimen/desc_text_size"
+                android:layout_marginTop="1dip"
+                android:layout_toRightOf="@+id/thumbnail"
+                android:text="Description goes here..."
+                android:ellipsize="end"
+                android:lines="2"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:showDividers="middle"
+                android:divider="@drawable/gradient_bg"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp">
+
+                <FrameLayout
+                    android:layout_width="200dp"
+                    android:layout_height="12dp"
+                    android:background="#7f7f7f7f">
+
+                    <View
+                        android:id="@+id/progress_bar"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="#000" />
+                </FrameLayout>
+
+                <View
+                    android:id="@+id/downloaded_icon"
+                    android:layout_toRightOf="@+id/thumbnail"
+                    android:layout_below="@id/description"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="0dp" />
+
+                <View
+                    android:id="@+id/played_icon"
+                    android:layout_toRightOf="@+id/downloaded_icon"
+                    android:layout_below="@id/description"
+                    android:layout_width="12dip"
+                    android:layout_height="12dip"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

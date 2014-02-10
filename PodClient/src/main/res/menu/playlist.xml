@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".PlaylistActivity" >
+    
+    <item android:id="@+id/action_sort"
+        android:title="Sort"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_sort_by_size" />
+
+    <item android:id="@+id/action_add_items"
+        android:title="Add / Remove items"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom"
+        android:icon="@android:drawable/ic_menu_add" />
+
+    <item android:id="@+id/action_download_all"
+        android:title="Download all"
+        android:orderInCategory="110"
+        android:icon="@android:drawable/ic_menu_save" />
+
+</menu>

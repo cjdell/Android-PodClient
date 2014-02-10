@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PodClient" />
+            <option value="$PROJECT_DIR$/drag-sort-listview" />
+            <option value="$PROJECT_DIR$/iconicdroid" />
+            <option value="$PROJECT_DIR$/pager" />
+            <option value="$PROJECT_DIR$/sliding-up-panel" />
+            <option value="$PROJECT_DIR$/sugar" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>
+
