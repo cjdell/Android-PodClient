@@ -20,12 +20,12 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import com.cjdell.podclient.adapters.FeedResultAdapter;
 import com.cjdell.podclient.helpers.EndlessScrollListener;
 import com.cjdell.podclient.services.FeedDirectory;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
 /**

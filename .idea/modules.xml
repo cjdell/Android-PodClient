@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-PodClient.iml" filepath="$PROJECT_DIR$/Android-PodClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/PodClient.iml" filepath="$PROJECT_DIR$/PodClient.iml" />
-      <module fileurl="file://$PROJECT_DIR$/PodClient/PodClient-PodClient.iml" filepath="$PROJECT_DIR$/PodClient/PodClient-PodClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/drag-sort-listview/drag-sort-listview.iml" filepath="$PROJECT_DIR$/drag-sort-listview/drag-sort-listview.iml" />
       <module fileurl="file://$PROJECT_DIR$/iconicdroid/iconicdroid.iml" filepath="$PROJECT_DIR$/iconicdroid/iconicdroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/pager/pager.iml" filepath="$PROJECT_DIR$/pager/pager.iml" />

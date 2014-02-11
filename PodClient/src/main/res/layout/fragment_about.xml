@@ -16,7 +16,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Thank you for downloading this app. If you enjoy using it, why not buy me a beer?"
+        android:text="Thank you for downloading this app. If you enjoy using it, why not support it?"
         android:id="@+id/textView2"
         android:layout_marginTop="8dp" />
 
@@ -29,6 +29,5 @@
         android:background="@drawable/button_back"
         android:textColor="#ffffff"
         android:textSize="24dp" />
-
 
 </LinearLayout>
