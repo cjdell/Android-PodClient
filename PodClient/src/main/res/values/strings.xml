@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Pod Party</string>
+    <string name="app_name">Podcast Receiver</string>
     <string name="title_feed_detail">Feed Detail</string>
     <string name="title_activity_feed_list">FeedList</string>
     <string name="hello_world">Hello world!</string>
